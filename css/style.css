@@ -3,10 +3,10 @@
 :root {
     --color-primary: #4d41c0;
     --bg-gray: #e8e8e8;
-    --text--gray: #4a4a4a;
+    --text-gray: #4a4a4a;
     --white: #fff;
     --text-light-gray: #aaa;
-
+    --star-yellow: #FFBB3A;
 }
 
 * {
@@ -62,7 +62,7 @@ a, a:hover {
     justify-content: space-between; /* justifica verticalmente por causa da direção do flex que foi invertido */
     background-color: var(--white);
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3 {
@@ -71,6 +71,31 @@ a, a:hover {
     font-weight: 700;
     text-align: center;
 }
+
+.dsmovie-class-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-class-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.dsmovie-class-description-bottom img {
+    width: 22px;
+    height: 21px;
+}
+
+.dsmovie-class-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
